@@ -14,7 +14,6 @@
       'brand.subtitle': '全球广告与跨境支付服务商',
       'nav.advantages': '平台优势',
       'nav.scenarios': '场景方案',
-      'nav.binMatrix': '卡段矩阵',
       'nav.security': '安全合规',
       'nav.workflow': '使用流程',
       'nav.cta': '联系商务',
@@ -25,7 +24,6 @@
         '面向跨境电商与投放团队，提供多币种虚拟卡、卡段策略、快速开卡、风控配置、API对接与对账能力。支持全球主流支付场景，帮助团队稳定放量、清晰管理资金流。',
       'hero.primaryCta': '了解解决方案',
       'hero.secondaryCta': '查看使用流程',
-      'hero.binLink': '探索卡段矩阵 →',
       'hero.tag1': '多币种原币结算',
       'hero.tag2': '3s 秒级批量开卡',
       'hero.tag3': 'REST API 全自动化',
@@ -92,35 +90,6 @@
       'scenarios.metric2Label': '单卡预算颗粒度',
       'scenarios.metric3Label': '财务对账周期',
       'scenarios.workflowBtn': '查看接入流程 →',
-      'binMatrix.tag': '通道与号段',
-      'binMatrix.title': '全球精选卡段矩阵与路由网络',
-      'binMatrix.subtitle':
-        '涵盖美区、港区、欧区与英区一级发行机构代码，专为广告投放、店群采购与全球 SaaS 优化授权路由。',
-      'binMatrix.t1Title': '广告放量专属卡段',
-      'binMatrix.t1Sub': 'Visa Infinite · 媒介采买高消耗',
-      'binMatrix.t2Title': '跨境电商多币种商业段',
-      'binMatrix.t2Sub': 'Mastercard World · 店群采购结算',
-      'binMatrix.t3Title': '欧洲合规与物流缴纳段',
-      'binMatrix.t3Sub': 'Visa Commercial · SEPA / VAT',
-      'binMatrix.t4Title': '企业级 SaaS 订阅段',
-      'binMatrix.t4Sub': 'Visa Business · 开发者工具与 AI',
-      'binMatrix.adaptedPlatforms': '原生适配扣款平台：',
-      'binMatrix.m1': '平均授权成功率',
-      'binMatrix.m1Note': '高基数连续扣款防误判',
-      'binMatrix.m2': '结算币种体系',
-      'binMatrix.m2Note': '0% 货币转换手续费',
-      'binMatrix.m3': '3DS 验证机制',
-      'binMatrix.m3Note': '支持 Webhook 实时回传',
-      'binMatrix.m4': '风控隔离架构',
-      'binMatrix.m4Note': '连带风控率低于 0.02%',
-      'binMatrix.g1Title': '原币对齐 0 汇损',
-      'binMatrix.g1Desc': '直接对接国际清算行外汇流动性池，扣款币种与商户标价完全一致，杜绝二次货币转换费。',
-      'binMatrix.g2Title': '独立 BIN 组隔离',
-      'binMatrix.g2Desc': '按团队、投放渠道和店铺分配独立号段卡池，单卡出现异常绝不污染主账号与其他卡片正常扣款。',
-      'binMatrix.g3Title': '动态 3DS 智能验证',
-      'binMatrix.g3Desc': '白名单主流商户自动免除 3DS 繁琐流程；敏感交易验证码支持 API Webhook 或控制台即时秒推。',
-      'binMatrix.g4Title': '并发高可用弹性调度',
-      'binMatrix.g4Desc': '多发卡行自动热备路由，当单条发卡通道遭遇维护或拥堵时，毫秒级无感切换备用发卡通道。',
       'security.tag': '风险管理',
       'security.title': '安全合规',
       'security.subtitle':
@@ -171,7 +140,6 @@
       'brand.subtitle': 'Global Ad Spend & Cross-Border Card Platform',
       'nav.advantages': 'Advantages',
       'nav.scenarios': 'Solutions',
-      'nav.binMatrix': 'BIN Matrix',
       'nav.security': 'Security',
       'nav.workflow': 'How It Works',
       'nav.cta': 'Contact Sales',
@@ -182,7 +150,6 @@
         'Built for cross-border e-commerce and media buying teams with multi-currency virtual cards, custom BIN strategies, 3-second card issuance, granular risk controls, automated APIs, and unified reconciliation.',
       'hero.primaryCta': 'Explore Solutions',
       'hero.secondaryCta': '4-Step Workflow',
-      'hero.binLink': 'Explore BIN Matrix →',
       'hero.tag1': '20+ Native Currencies',
       'hero.tag2': '3s Batch Card Issuance',
       'hero.tag3': 'Full REST API Automation',
@@ -252,35 +219,6 @@
       'scenarios.metric2Label': 'Budget Granularity',
       'scenarios.metric3Label': 'Reconciliation Speed',
       'scenarios.workflowBtn': 'View Integration Steps →',
-      'binMatrix.tag': 'BINs & Gateways',
-      'binMatrix.title': 'Global BIN Matrix & Routing Network',
-      'binMatrix.subtitle':
-        'Tier-1 issuer identification numbers across US, HK, EU, and UK optimized for ad platforms, marketplaces, and global SaaS.',
-      'binMatrix.t1Title': 'Ad Spend Scaling Tier',
-      'binMatrix.t1Sub': 'Visa Infinite · Media Buying Volume',
-      'binMatrix.t2Title': 'E-Commerce Commercial Tier',
-      'binMatrix.t2Sub': 'Mastercard World · Sourcing & Payouts',
-      'binMatrix.t3Title': 'European VAT & Logistics Tier',
-      'binMatrix.t3Sub': 'Visa Commercial · SEPA / Freight',
-      'binMatrix.t4Title': 'Enterprise SaaS Tier',
-      'binMatrix.t4Sub': 'Visa Business · AI & Cloud APIs',
-      'binMatrix.adaptedPlatforms': 'Natively Adapted Platforms:',
-      'binMatrix.m1': 'Avg Auth Success Rate',
-      'binMatrix.m1Note': 'High-velocity billing protection',
-      'binMatrix.m2': 'Settlement Currencies',
-      'binMatrix.m2Note': '0% FX Conversion Markups',
-      'binMatrix.m3': '3DS Protocol Strategy',
-      'binMatrix.m3Note': 'Webhook instant OTP push',
-      'binMatrix.m4': 'Risk Isolation Mode',
-      'binMatrix.m4Note': 'Account decline contagion < 0.02%',
-      'binMatrix.g1Title': 'Zero FX Markup',
-      'binMatrix.g1Desc': 'Directly connected to institutional interbank FX liquidity pools with zero secondary conversion fees.',
-      'binMatrix.g2Title': 'Card Pool Isolation',
-      'binMatrix.g2Desc': 'Segment cards by buyer squad and vendor to ensure individual card issues never compromise master accounts.',
-      'binMatrix.g3Title': 'Dynamic 3DS Intelligence',
-      'binMatrix.g3Desc': 'Frictionless auto-auth for trusted merchants with instant OTP webhook relays for high-value transactions.',
-      'binMatrix.g4Title': 'High-Availability Routing',
-      'binMatrix.g4Desc': 'Automated multi-issuer failover switches congested gateways in milliseconds with zero downtime.',
       'security.tag': 'Risk Management',
       'security.title': 'Security & Compliance',
       'security.subtitle':
@@ -331,107 +269,8 @@
   };
 
   /* ==========================================================================
-     2. BIN Matrix & Scenario Data
+     2. Scenario Data
      ========================================================================== */
-  const BIN_DATA = {
-    bin4582: {
-      zh: {
-        region: '美国地区 · 一级银行直发号段',
-        network: 'VISA INFINITE',
-        title: 'BIN 4582 广告投放高消耗专属段',
-        desc: '深度优化 Meta Ads、Google Ads、TikTok For Business 与 Twitter(X) 的扣款握手机制，配备大额单笔授权通道与智能 3DS 验证分流。',
-        platforms: ['Meta Ads Manager', 'Google Ads (Dublin / US)', 'TikTok For Business', 'Microsoft Advertising'],
-        m1: '99.4%',
-        m2: 'USD 原币扣款',
-        m3: '智能免密 / OTP',
-        m4: '一户一卡独立卡槽'
-      },
-      en: {
-        region: 'United States · Tier-1 Commercial Issuer',
-        network: 'VISA INFINITE',
-        title: 'BIN 4582 High-Volume Media Buying Segment',
-        desc: 'Deeply calibrated for Meta Ads, Google Ads, TikTok, and Twitter(X) payment gateways with elevated velocity caps and automated 3DS routing.',
-        platforms: ['Meta Ads Manager', 'Google Ads (Dublin / US)', 'TikTok For Business', 'Microsoft Advertising'],
-        m1: '99.4%',
-        m2: 'Native USD Direct',
-        m3: 'Frictionless / OTP',
-        m4: '1-Account-1-Card Slot'
-      }
-    },
-    bin5329: {
-      zh: {
-        region: '中国香港地区 · 跨境商户综合段',
-        network: 'MASTERCARD WORLD',
-        title: 'BIN 5329 跨境电商与店群采购商业段',
-        desc: '针对 Amazon 店群月租、Shopify Markets、速卖通采购及海外供应链分账专门配置，支持 HKD/USD 快速结算与多店铺账目对齐。',
-        platforms: ['Amazon Seller Central', 'Shopify Payments', 'AliExpress Sourcing', 'Stripe Terminal'],
-        m1: '98.9%',
-        m2: 'HKD / USD 双币',
-        m3: '3DS 2.2 协议直连',
-        m4: '一店一卡账目隔离'
-      },
-      en: {
-        region: 'Hong Kong SAR · Regional Commercial Gateway',
-        network: 'MASTERCARD WORLD',
-        title: 'BIN 5329 Cross-Border E-Commerce Commercial Segment',
-        desc: 'Tailored for Amazon multi-storefront fees, Shopify billing, supplier sourcing, and DTC brands with dual HKD/USD direct settlement.',
-        platforms: ['Amazon Seller Central', 'Shopify Payments', 'AliExpress Sourcing', 'Stripe Terminal'],
-        m1: '98.9%',
-        m2: 'Dual HKD / USD',
-        m3: '3DS 2.2 Protocol',
-        m4: 'Per-Storefront Ledger'
-      }
-    },
-    bin4859: {
-      zh: {
-        region: '欧盟与英国地区 · 国际合规清算段',
-        network: 'VISA COMMERCIAL',
-        title: 'BIN 4859 国际物流与欧洲 VAT 申报专属段',
-        desc: '覆盖 DHL、FedEx、海外仓储 3PL 服务费统一代扣，以及英国 HMRC、欧洲各成员国 VAT 税务官方网关直连扣费。',
-        platforms: ['DHL Express & Freight', 'FedEx International', 'UK HMRC Gateway', 'EU One-Stop-Shop VAT'],
-        m1: '99.1%',
-        m2: 'EUR / GBP 原币',
-        m3: 'SEPA 兼容协议',
-        m4: '单物流渠道限额锁死'
-      },
-      en: {
-        region: 'European Union & UK · Financial Clearing Segment',
-        network: 'VISA COMMERCIAL',
-        title: 'BIN 4859 Freight Logistics & European VAT Segment',
-        desc: 'Designed for centralized 3PL freight payments (DHL, FedEx, Flexport) and official EU/UK VAT portals with zero conversion loss.',
-        platforms: ['DHL Express & Freight', 'FedEx International', 'UK HMRC Gateway', 'EU One-Stop-Shop VAT'],
-        m1: '99.1%',
-        m2: 'Native EUR / GBP',
-        m3: 'SEPA Compliant',
-        m4: 'Vendor-Locked Spend Cap'
-      }
-    },
-    bin4143: {
-      zh: {
-        region: '全球开发者与科技通道',
-        network: 'VISA BUSINESS',
-        title: 'BIN 4143 企业级 SaaS 订阅与 AI 研发段',
-        desc: '全面适配 OpenAI API、Anthropic Claude、AWS 云算力与 Figma/Slack 跨部门企业级软件自动续费，防止因风控误判导致的线上业务中断。',
-        platforms: ['OpenAI / Anthropic API', 'Amazon Web Services', 'Google Cloud Platform', 'Notion / Figma / Slack'],
-        m1: '99.6%',
-        m2: '全球主流货币支持',
-        m3: '开发者白名单免密',
-        m4: '按工具独立分配限额'
-      },
-      en: {
-        region: 'Global Tech & Cloud Infrastructure Channel',
-        network: 'VISA BUSINESS',
-        title: 'BIN 4143 Enterprise SaaS & AI API Segment',
-        desc: 'Engineered for uninterrupted recurring subscriptions across OpenAI, Anthropic, AWS, GCP, and collaborative SaaS with zero false declines.',
-        platforms: ['OpenAI / Anthropic API', 'Amazon Web Services', 'Google Cloud Platform', 'Notion / Figma / Slack'],
-        m1: '99.6%',
-        m2: 'Multi-Currency Basket',
-        m3: 'Developer Whitelist',
-        m4: 'Per-Tool Budget Lock'
-      }
-    }
-  };
-
   const SCENARIO_DATA = {
     ads: {
       zh: {
@@ -533,7 +372,6 @@
 
   let currentLang = localStorage.getItem('pb_lang') || 'zh';
   let currentScenario = 'ads';
-  let currentBinKey = 'bin4582';
   let cvvVisible = false;
   let activeBin = '4582';
 
@@ -659,7 +497,6 @@
       const centerX = rect.width / 2;
       const centerY = rect.height / 2;
 
-      // Subtle 2D-friendly perspective tilt (max 6 deg) + specular glare tracking
       const rotateX = ((y - centerY) / centerY) * -5.5;
       const rotateY = ((x - centerX) / centerX) * 7;
 
@@ -787,51 +624,12 @@
     });
 
     renderScenario(currentScenario);
-    renderBinSpec(currentBinKey);
     updateRuleBadge();
   }
 
   document.querySelectorAll('.lang-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       applyLanguage(btn.getAttribute('data-lang'));
-    });
-  });
-
-  /* ==========================================================================
-     6. Global BIN Matrix Selector Interaction
-     ========================================================================== */
-  function renderBinSpec(key) {
-    currentBinKey = key;
-    const spec = BIN_DATA[key][currentLang];
-    if (!spec) return;
-
-    document.getElementById('specRegionBadge').textContent = spec.region;
-    document.getElementById('specNetworkBadge').textContent = spec.network;
-    document.getElementById('specHeroTitle').textContent = spec.title;
-    document.getElementById('specHeroDesc').textContent = spec.desc;
-
-    const platformsRow = document.getElementById('specPlatformsRow');
-    if (platformsRow) {
-      platformsRow.innerHTML = spec.platforms
-        .map((p) => `<span class="platform-pill">${p}</span>`)
-        .join('');
-    }
-
-    document.getElementById('specM1').textContent = spec.m1;
-    document.getElementById('specM2').textContent = spec.m2;
-    document.getElementById('specM3').textContent = spec.m3;
-    document.getElementById('specM4').textContent = spec.m4;
-
-    document.querySelectorAll('.bin-tab-btn').forEach((btn) => {
-      const active = btn.getAttribute('data-bin-key') === key;
-      btn.classList.toggle('active', active);
-      btn.setAttribute('aria-selected', String(active));
-    });
-  }
-
-  document.querySelectorAll('.bin-tab-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      renderBinSpec(btn.getAttribute('data-bin-key'));
     });
   });
 
@@ -863,7 +661,7 @@
   }, 3600);
 
   /* ==========================================================================
-     7. Spotlight Mouse Tracking & Scenario Workbench
+     6. Spotlight Mouse Tracking & Scenario Workbench
      ========================================================================== */
   document.querySelectorAll('.bento-card').forEach((card) => {
     card.addEventListener('mousemove', (e) => {
@@ -902,7 +700,7 @@
   });
 
   /* ==========================================================================
-     8. Security Risk Rule Switches & Sticky Header
+     7. Security Risk Rule Switches & Sticky Header
      ========================================================================== */
   function updateRuleBadge() {
     const total = document.querySelectorAll('.switch-pill').length;
