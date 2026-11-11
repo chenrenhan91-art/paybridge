@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="pbPrimaryGrad" x1="12" y1="12" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#66b1ff" />
+      <stop offset="50%" stop-color="#409eff" />
+      <stop offset="100%" stop-color="#1d7dfa" />
+    </linearGradient>
+    <linearGradient id="pbWarmAccent" x1="20" y1="70" x2="100" y2="95" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2A2722" />
+      <stop offset="100%" stop-color="#5C574D" />
+    </linearGradient>
+    <filter id="pbGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#409eff" flood-opacity="0.28" />
+    </filter>
+  </defs>
+
+  <!-- Outer squircle frame in warm alabaster with subtle border -->
+  <rect x="6" y="6" width="108" height="108" rx="28" fill="#FFFFFF" stroke="#E6E2D8" stroke-width="2" />
+
+  <!-- Upper Card & Bridge Arch (Primary #409eff) -->
+  <path d="M26 42C26 33.1634 33.1634 26 42 26H78C86.8366 26 94 33.1634 94 42V54C94 58.4183 90.4183 62 86 62H68C63.5817 62 60 65.5817 60 70V84C60 89.5228 55.5228 94 50 94H34C29.5817 94 26 90.4183 26 86V42Z" fill="url(#pbPrimaryGrad)" filter="url(#pbGlow)" />
+
+  <!-- Interlocking Bridge Span & Payment Flow Arc (Warm Charcoal #2A2722) -->
+  <path d="M48 76C48 66.0589 56.0589 58 66 58H86C90.4183 58 94 61.5817 94 66V78C94 86.8366 86.8366 94 78 94H66C61.5817 94 58 90.4183 58 86V76H48Z" fill="url(#pbWarmAccent)" />
+
+  <!-- Smart EMV Chip Detail inside the blue card wing -->
+  <rect x="36" y="37" width="16" height="12" rx="3" fill="#FFFFFF" fill-opacity="0.92" />
+  <path d="M41 37V49M47 37V49M36 43H52" stroke="#409eff" stroke-width="1.4" stroke-linecap="round" />
+
+  <!-- Global Signal Nodes -->
+  <circle cx="77" cy="43" r="4.5" fill="#FFFFFF" />
+  <circle cx="77" cy="43" r="8.5" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="1.75" />
+</svg>

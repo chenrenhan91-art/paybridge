@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PayBridge | 全球跨境支付与广告投放企业级虚拟卡平台</title>
+  <meta name="description" content="PayBridge 面向跨境电商与全球投放团队，提供多币种虚拟卡、卡段策略、秒级开卡、风控配置、API对接与清晰对账能力。" />
+  <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Three.js for Hero Background Ambient Topology -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- ==================== Three.js Interactive Hero Background Canvas ==================== -->
+  <canvas id="heroBgCanvas" class="hero-three-canvas" aria-hidden="true"></canvas>
+
+  <!-- Multi-Layer Architectural & Aurora Ambience -->
+  <div class="ambient-stage" aria-hidden="true">
+    <div class="aurora-blob blob-primary"></div>
+    <div class="aurora-blob blob-warm"></div>
+    <div class="aurora-blob blob-accent"></div>
+  </div>
+  <div class="bg-grid-canvas" aria-hidden="true"></div>
+
+  <!-- ==================== Floating Capsule Top Header ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#top" class="brand-logo" aria-label="PayBridge Home">
+          <img src="./assets/logo.svg" alt="PayBridge Logo" width="38" height="38" />
+          <div class="brand-text-wrap">
+            <span class="brand-title">
+              PayBridge
+              <span class="brand-badge">Issuing 3.2</span>
+            </span>
+            <span class="brand-subtitle" data-i18n="brand.subtitle">全球广告与跨境支付服务商</span>
+          </div>
+        </a>
+
+        <nav class="top-nav" aria-label="Primary Navigation">
+          <a href="#advantages" class="nav-link active" data-i18n="nav.advantages">平台优势</a>
+          <a href="#scenarios" class="nav-link" data-i18n="nav.scenarios">场景方案</a>
+          <a href="#bin-matrix" class="nav-link" data-i18n="nav.binMatrix">卡段矩阵</a>
+          <a href="#security" class="nav-link" data-i18n="nav.security">安全合规</a>
+          <a href="#workflow" class="nav-link" data-i18n="nav.workflow">使用流程</a>
+        </nav>
+
+        <div class="header-tools">
+          <div class="lang-switch" role="group" aria-label="Language Switcher">
+            <button type="button" class="lang-btn active" data-lang="zh">中</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+          </div>
+          <a href="mailto:dingxingxing8@gmail.com" class="btn btn-primary" data-i18n="nav.cta">联系商务</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ==================== Hero Section ==================== -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <!-- Left Copy Column -->
+        <div class="hero-copy">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-pill">PAYBRIDGE 3.2</span>
+            <span data-i18n="hero.eyebrow">全球广告服务商 · 多币种秒级发卡引擎</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero.titleLine1">跨境支付与广告投放</span><br />
+            <span class="text-highlight" data-i18n="hero.titleLine2">企业级虚拟卡平台</span>
+          </h1>
+
+          <p class="hero-description" data-i18n="hero.description">
+            面向跨境电商与投放团队，提供多币种虚拟卡、卡段策略、快速开卡、风控配置、API对接与对账能力。支持全球主流支付场景，帮助团队稳定放量、清晰管理资金流。
+          </p>
+
+          <!-- Pure Showcase Navigation Actions -->
+          <div class="hero-cta-group">
+            <a href="#scenarios" class="btn btn-primary btn-lg">
+              <span data-i18n="hero.primaryCta">了解解决方案</span>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#workflow" class="btn btn-secondary btn-lg" data-i18n="hero.secondaryCta">查看使用流程</a>
+            <a href="#bin-matrix" class="hero-text-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+              <span data-i18n="hero.binLink">探索卡段矩阵 →</span>
+            </a>
+          </div>
+
+          <div class="hero-feature-tags">
+            <span class="feature-tag">
+              <span class="dot"></span>
+              <span data-i18n="hero.tag1">多币种原币结算</span>
+            </span>
+            <span class="feature-tag">
+              <span class="dot"></span>
+              <span data-i18n="hero.tag2">3s 秒级批量开卡</span>
+            </span>
+            <span class="feature-tag">
+              <span class="dot"></span>
+              <span data-i18n="hero.tag3">REST API 全自动化</span>
+            </span>
+            <span class="feature-tag">
+              <span class="dot"></span>
+              <span data-i18n="hero.tag4">PCI-DSS 金融级合规</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Column: Photorealistic 2D-Perspective Metallic Card Stage -->
+        <div class="hero-visual-stage">
+          <div class="command-stage-shell">
+            <div class="command-stage-inner">
+              <!-- Stage Header: Live BIN Routing Telemetry + BIN Selector -->
+              <div class="stage-top-bar">
+                <div class="stage-status">
+                  <span class="pulse-dot"></span>
+                  <span data-i18n="cardStage.status">BIN 路由实时在线 · 99.98% 授权通过</span>
+                </div>
+                <div class="card-tier-pills" role="tablist" aria-label="Card BIN Selector">
+                  <button type="button" class="tier-pill active" data-card-theme="blue" data-bin="4582" data-network="VISA INFINITE">4582 US</button>
+                  <button type="button" class="tier-pill" data-card-theme="charcoal" data-bin="5329" data-network="MASTERCARD WORLD">5329 HK</button>
+                  <button type="button" class="tier-pill" data-card-theme="alabaster" data-bin="4859" data-network="VISA COMMERCIAL">4859 EU</button>
+                </div>
+              </div>
+
+              <!-- Multi-Currency Treasury Mini-Bar -->
+              <div class="treasury-mini-bar">
+                <div class="treasury-cell">
+                  <div class="treasury-ccy">
+                    <span>USD POOL</span>
+                    <span class="rate-tag">0% FX</span>
+                  </div>
+                  <div class="treasury-bal">$148,920.00</div>
+                </div>
+                <div class="treasury-cell">
+                  <div class="treasury-ccy">
+                    <span>EUR POOL</span>
+                    <span class="rate-tag">SEPA</span>
+                  </div>
+                  <div class="treasury-bal">€64,500.00</div>
+                </div>
+                <div class="treasury-cell">
+                  <div class="treasury-ccy">
+                    <span>HKD POOL</span>
+                    <span class="rate-tag">FAST</span>
+                  </div>
+                  <div class="treasury-bal">HK$320,000</div>
+                </div>
+              </div>
+
+              <!-- Stacked 2D-Perspective Photorealistic Metallic Virtual Card Stage -->
+              <div class="card-stack-stage">
+                <div class="virtual-card-ghost" aria-hidden="true"></div>
+
+                <div class="virtual-card-3d" id="interactiveCard" data-theme="blue">
+                  <!-- Brushed Metal Micro-Grain & Anisotropic Sheen Overlay -->
+                  <div class="vc-brushed-grain" aria-hidden="true"></div>
+                  <div class="vc-edge-bevel" aria-hidden="true"></div>
+
+                  <!-- Precision Laser-Etched Guilloche Security Pattern -->
+                  <svg class="vc-pattern-svg" viewBox="0 0 440 278" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="370" cy="48" r="165" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" />
+                    <circle cx="370" cy="48" r="130" stroke="currentColor" stroke-width="1.1" />
+                    <circle cx="370" cy="48" r="96" stroke="currentColor" stroke-width="0.9" />
+                    <circle cx="370" cy="48" r="64" stroke="currentColor" stroke-width="0.75" />
+                    <path d="M-30 230 C 90 155, 220 250, 350 185 S 450 130, 480 175" stroke="currentColor" stroke-width="1.1" />
+                    <path d="M-30 248 C 100 175, 230 268, 360 202 S 450 148, 480 192" stroke="currentColor" stroke-width="0.75" opacity="0.65" />
+                  </svg>
+
+                  <!-- Dynamic Cursor-Tracking Specular & Iridescent Foil Glare -->
+                  <div class="card-glare" id="cardGlare"></div>
+                  <div class="card-iridescent-sheen" id="cardSheen"></div>
+
+                  <div class="vc-top">
+                    <div class="vc-brand">
+                      <span class="vc-brand-label">PAYBRIDGE COMMERCIAL ISSUING</span>
+                      <span class="vc-brand-name">
+                        <span class="vc-brand-mark"></span>
+                        PayBridge
+                        <span class="vc-tier-tag" id="vcTierTag">INFINITE</span>
+                      </span>
+                    </div>
+                    <span class="vc-currency-badge" id="vcCurrencyBadge">USD · MULTI-CCY</span>
+                  </div>
+
+                  <!-- Realistic Multi-Pad Metallic EMV Chip & Contactless Sensor -->
+                  <div class="vc-chip-row">
+                    <div class="vc-chip-assembly">
+                      <div class="vc-chip" aria-hidden="true">
+                        <span class="chip-line cl-v1"></span>
+                        <span class="chip-line cl-v2"></span>
+                        <span class="chip-line cl-h1"></span>
+                        <span class="chip-line cl-h2"></span>
+                        <span class="chip-core"></span>
+                      </div>
+                      <svg class="vc-nfc-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="M8.5 7.5a6.5 6.5 0 0 1 0 9"/>
+                        <path d="M12 5a10 10 0 0 1 0 14"/>
+                        <path d="M15.5 2.5a13.5 13.5 0 0 1 0 19"/>
+                        <circle cx="5" cy="12" r="1.2" fill="currentColor"/>
+                      </svg>
+                    </div>
+                    <div class="vc-hologram-seal" aria-hidden="true">
+                      <span>PB·3DS</span>
+                    </div>
+                  </div>
+
+                  <!-- Embossed Metallic Card Number -->
+                  <div class="vc-number" id="vcNumberDisplay">
+                    <span>4582</span>
+                    <span>9024</span>
+                    <span>1158</span>
+                    <span>8084</span>
+                  </div>
+
+                  <div class="vc-footer">
+                    <div class="vc-meta-group">
+                      <div class="vc-meta-item">
+                        <span class="vc-meta-label">CARD HOLDER</span>
+                        <span class="vc-meta-value" id="vcHolder">PAYBRIDGE TEAM</span>
+                      </div>
+                      <div class="vc-meta-item">
+                        <span class="vc-meta-label">VALID THRU</span>
+                        <span class="vc-meta-value" id="vcExpiry">12/29</span>
+                      </div>
+                      <div class="vc-meta-item">
+                        <span class="vc-meta-label">SECURITY CVV</span>
+                        <span class="vc-meta-value" id="vcCvv">***</span>
+                      </div>
+                    </div>
+                    <div class="vc-network-logo" id="vcNetworkLogo">
+                      <span class="visa-wordmark">VISA</span>
+                      <span class="visa-sub">Commercial</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive Quick Controls -->
+              <div class="card-quick-controls">
+                <div class="control-group">
+                  <button type="button" class="mini-action-btn" id="btnInstantIssue">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    <span data-i18n="cardStage.instantIssue">切换新卡号展示</span>
+                  </button>
+                  <button type="button" class="mini-action-btn" id="btnToggleCvv">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <span data-i18n="cardStage.toggleCvv">显示/隐藏 CVV</span>
+                  </button>
+                  <button type="button" class="mini-action-btn" id="btnCopyCard">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <span id="copyCardText" data-i18n="cardStage.copyPan">复制卡号</span>
+                  </button>
+                </div>
+                <span style="font-size:0.73rem; font-family:var(--pb-font-mono); color:var(--pb-text-muted);" id="issueLatencyText" data-i18n="cardStage.latencyNote">最近发卡耗时: 1.8s</span>
+              </div>
+
+              <!-- Live Authorization Webhook Stream -->
+              <div class="live-tx-ticker" id="liveTxTicker">
+                <div class="tx-left">
+                  <div class="tx-icon" id="txIcon">FB</div>
+                  <div class="tx-info">
+                    <span class="tx-merchant" id="txMerchant">Meta Ads Ireland · 4582 **** 8084</span>
+                    <span class="tx-sub" id="txSub" data-i18n="cardStage.txSub">3DS 免验证秒级授权通过 · 0 汇损直连</span>
+                  </div>
+                </div>
+                <span class="tx-amount" id="txAmount">-$1,280.00 USD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Core Metrics Ribbon ==================== -->
+    <section class="metrics-ribbon" aria-label="Platform Statistics">
+      <div class="container">
+        <div class="metrics-shell">
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-top-row">
+                <div class="metric-value">
+                  <span class="counter-num" data-target="500">500</span><span class="accent-suffix">K+</span>
+                </div>
+                <span class="metric-mini-badge">GLOBAL</span>
+              </div>
+              <div>
+                <div class="metric-label" data-i18n="metrics.m1Label">累计开卡数量</div>
+                <div class="metric-caption" data-i18n="metrics.m1Cap">覆盖全球主流电商与广告团队</div>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-top-row">
+                <div class="metric-value">
+                  <span class="counter-num" data-target="20">20</span><span class="accent-suffix">+</span>
+                </div>
+                <span class="metric-mini-badge">0% FX MARKUP</span>
+              </div>
+              <div>
+                <div class="metric-label" data-i18n="metrics.m2Label">支持币种</div>
+                <div class="metric-caption" data-i18n="metrics.m2Cap">USD / EUR / GBP / HKD / SGD 等原币结算</div>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-top-row">
+                <div class="metric-value">
+                  <span class="counter-num" data-target="99.9">99.9</span><span class="accent-suffix">%</span>
+                </div>
+                <span class="metric-mini-badge">MULTI-ISSUER</span>
+              </div>
+              <div>
+                <div class="metric-label" data-i18n="metrics.m3Label">服务可用率</div>
+                <div class="metric-caption" data-i18n="metrics.m3Cap">多活金融级架构与自动故障转移</div>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-top-row">
+                <div class="metric-value">
+                  <span class="counter-num" data-target="3">3</span><span class="accent-suffix">s</span>
+                </div>
+                <span class="metric-mini-badge">REST API</span>
+              </div>
+              <div>
+                <div class="metric-label" data-i18n="metrics.m4Label">平均开卡耗时</div>
+                <div class="metric-caption" data-i18n="metrics.m4Cap">控制台批量建卡与 API 实时下发</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Infinite Ecosystem Marquee Strip ==================== -->
+    <section class="ecosystem-strip">
+      <div class="container">
+        <p class="ecosystem-label" data-i18n="ecosystem.label">原生适配全球主流广告、电商、物流与 AI 订阅生态</p>
+        <div class="marquee-viewport">
+          <div class="marquee-track">
+            <span class="eco-pill"><span class="eco-dot"></span>Meta Ads</span>
+            <span class="eco-pill"><span class="eco-dot"></span>Google Ads</span>
+            <span class="eco-pill"><span class="eco-dot"></span>TikTok For Business</span>
+            <span class="eco-pill"><span class="eco-dot"></span>Amazon Seller & AWS</span>
+            <span class="eco-pill"><span class="eco-dot"></span>Shopify Markets</span>
+            <span class="eco-pill"><span class="eco-dot"></span>DHL / FedEx Global</span>
+            <span class="eco-pill"><span class="eco-dot"></span>OpenAI / Anthropic API</span>
+            <span class="eco-pill"><span class="eco-dot"></span>EU & UK VAT Tax</span>
+            <!-- Duplicated set for seamless infinite scroll -->
+            <span class="eco-pill" aria-hidden="true"><span class="eco-dot"></span>Meta Ads</span>
+            <span class="eco-pill" aria-hidden="true"><span class="eco-dot"></span>Google Ads</span>
+            <span class="eco-pill" aria-hidden="true"><span class="eco-dot"></span>TikTok For Business</span>
+            <span class="eco-pill" aria-hidden="true"><span class="eco-dot"></span>Amazon Seller & AWS</span>
+            <span class="eco-pill" aria-hidden="true"><span class="eco-dot"></span>Shopify Markets</span>
+            <span class="eco-pill" aria-hidden="true"><span class="eco-dot"></span>DHL / FedEx Global</span>
+            <span class="eco-pill" aria-hidden="true"><span class="eco-dot"></span>OpenAI / Anthropic API</span>
+            <span class="eco-pill" aria-hidden="true"><span class="eco-dot"></span>EU & UK VAT Tax</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Platform Advantages (Spotlight Bento Grid) ==================== -->
+    <section class="section-block alt-bg" id="advantages">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="advantages.tag">平台能力</span>
+          <h2 class="section-title" data-i18n="advantages.title">平台优势</h2>
+          <p class="section-subtitle" data-i18n="advantages.subtitle">
+            围绕跨境支付全链路构建能力，覆盖开卡、充值、支付、风控与财务管理。
+          </p>
+        </div>
+
+        <div class="bento-grid" id="bentoGrid">
+          <!-- 1. 多币种卡 (Span 7) -->
+          <article class="bento-card span-7">
+            <div>
+              <div class="bento-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <h3 class="bento-title" style="margin-top:16px;" data-i18n="advantages.c1Title">多币种卡</h3>
+              <p class="bento-desc" data-i18n="advantages.c1Desc">
+                支持多种币种，按业务需求配置支付方案，降低汇损。直连机构级外汇流动性池，原币扣款零二次转换费。
+              </p>
+            </div>
+            <div class="bento-micro-ui">
+              <div class="currency-matrix">
+                <span class="curr-chip"><strong>USD</strong> 1.0000 · 0% FX</span>
+                <span class="curr-chip"><strong>EUR</strong> 0.9215 · SEPA</span>
+                <span class="curr-chip"><strong>GBP</strong> 0.7890 · FasterPay</span>
+                <span class="curr-chip"><strong>HKD</strong> 7.7820 · Local</span>
+                <span class="curr-chip"><strong>SGD</strong> 1.3410 · Fast</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. 卡段丰富 (Span 5) -->
+          <article class="bento-card span-5">
+            <div>
+              <div class="bento-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+              </div>
+              <h3 class="bento-title" style="margin-top:16px;" data-i18n="advantages.c2Title">卡段丰富</h3>
+              <p class="bento-desc" data-i18n="advantages.c2Desc">
+                多号段可选，适配不同投放平台、地区与商户规则。支持美区、港区、欧区、英区多卡组独立隔离。
+              </p>
+            </div>
+            <div class="bento-micro-ui">
+              <div class="bin-bars">
+                <div class="bin-row">
+                  <span>BIN 4582 (US Ads)</span>
+                  <div class="bin-progress"><div class="bin-fill" style="width:98%"></div></div>
+                  <strong>99.4%</strong>
+                </div>
+                <div class="bin-row">
+                  <span>BIN 5329 (HK Ecom)</span>
+                  <div class="bin-progress"><div class="bin-fill" style="width:96%"></div></div>
+                  <strong>98.9%</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. 高效开卡 (Span 4) -->
+          <article class="bento-card">
+            <div>
+              <div class="bento-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <h3 class="bento-title" style="margin-top:16px;" data-i18n="advantages.c3Title">高效开卡</h3>
+              <p class="bento-desc" data-i18n="advantages.c3Desc">
+                支持秒开卡与一次开多张，满足团队批量投放需求。单次任务可并发创建 500+ 张独立预算虚拟卡。
+              </p>
+            </div>
+            <div class="bento-micro-ui" style="display:flex; justify-content:space-between; align-items:center;">
+              <span data-i18n="advantages.c3Micro">批量任务 #PB-809</span>
+              <strong style="color:var(--el-color-primary); font-family:var(--pb-font-mono);">100 Cards / 2.8s ✓</strong>
+            </div>
+          </article>
+
+          <!-- 4. 技术可靠 (Span 4) -->
+          <article class="bento-card">
+            <div>
+              <div class="bento-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3 class="bento-title" style="margin-top:16px;" data-i18n="advantages.c4Title">技术可靠</h3>
+              <p class="bento-desc" data-i18n="advantages.c4Desc">
+                支持 API 对接与服务平台开卡，提升自动化与运营效率。提供实时 Webhook 授权通知与 3DS 验证码自动推送。
+              </p>
+            </div>
+            <div class="bento-micro-ui">
+              <div class="code-mini-preview">
+                <span class="kw">POST</span> /v1/cards/issue → <span style="color:var(--pb-success)">200 OK (180ms)</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. 对账清晰 (Span 4) -->
+          <article class="bento-card">
+            <div>
+              <div class="bento-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <h3 class="bento-title" style="margin-top:16px;" data-i18n="advantages.c5Title">对账清晰</h3>
+              <p class="bento-desc" data-i18n="advantages.c5Desc">
+                统一管理充值、消费与结算数据，财务复盘更高效。支持按投手、店铺、项目标签一键导出月度日结报表。
+              </p>
+            </div>
+            <div class="bento-micro-ui" style="display:flex; justify-content:space-between; align-items:center;">
+              <span data-i18n="advantages.c5Micro">T+0 自动流水对齐</span>
+              <strong style="color:var(--logo-title-text-color); font-family:var(--pb-font-mono);">CSV / API / ERP</strong>
+            </div>
+          </article>
+
+          <!-- 6. 场景多样 (Span 12 Banner inside Bento) -->
+          <article class="bento-card" style="grid-column: span 12; flex-direction: row; align-items: center; flex-wrap: wrap;">
+            <div style="flex: 1 1 420px;">
+              <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+                <div class="bento-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </div>
+                <h3 class="bento-title" style="margin-bottom:0;" data-i18n="advantages.c6Title">场景多样</h3>
+              </div>
+              <p class="bento-desc" data-i18n="advantages.c6Desc">
+                覆盖广告投放、物流、VAT、SaaS 订阅等线上多场景支付，一套企业主账户统管全球多团队支出。
+              </p>
+            </div>
+            <div class="currency-matrix" style="flex: 1 1 320px; justify-content: flex-end;">
+              <span class="curr-chip" data-i18n="advantages.c6Tag1">广告投放放量</span>
+              <span class="curr-chip" data-i18n="advantages.c6Tag2">跨境店群采购</span>
+              <span class="curr-chip" data-i18n="advantages.c6Tag3">国际物流结算</span>
+              <span class="curr-chip" data-i18n="advantages.c6Tag4">企业 SaaS 订阅</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Scenario Solutions (Left-Menu Workbench) ==================== -->
+    <section class="section-block" id="scenarios">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="scenarios.tag">业务覆盖</span>
+          <h2 class="section-title" data-i18n="scenarios.title">解决方案分场景</h2>
+          <p class="section-subtitle" data-i18n="scenarios.subtitle">
+            按业务场景拆解资金链路，用可执行的方案解决实际支付问题。
+          </p>
+        </div>
+
+        <div class="scenario-workbench">
+          <aside class="scenario-left-menu" aria-label="Scenario Selector">
+            <div class="scenario-menu-list" role="tablist">
+              <button type="button" class="scenario-tab-btn active" data-scenario="ads" role="tab" aria-selected="true">
+                <div class="tab-btn-left">
+                  <span class="tab-btn-title" data-i18n="scenarios.tab1Title">广告投放</span>
+                  <span class="tab-btn-sub" data-i18n="scenarios.tab1Sub">跨平台投放稳定放量</span>
+                </div>
+                <span>→</span>
+              </button>
+
+              <button type="button" class="scenario-tab-btn" data-scenario="ecom" role="tab" aria-selected="false">
+                <div class="tab-btn-left">
+                  <span class="tab-btn-title" data-i18n="scenarios.tab2Title">电商收款与采购</span>
+                  <span class="tab-btn-sub" data-i18n="scenarios.tab2Sub">多站点收付一体化</span>
+                </div>
+                <span>→</span>
+              </button>
+
+              <button type="button" class="scenario-tab-btn" data-scenario="logistics" role="tab" aria-selected="false">
+                <div class="tab-btn-left">
+                  <span class="tab-btn-title" data-i18n="scenarios.tab3Title">物流支付</span>
+                  <span class="tab-btn-sub" data-i18n="scenarios.tab3Sub">渠道费用统一结算</span>
+                </div>
+                <span>→</span>
+              </button>
+
+              <button type="button" class="scenario-tab-btn" data-scenario="saas" role="tab" aria-selected="false">
+                <div class="tab-btn-left">
+                  <span class="tab-btn-title" data-i18n="scenarios.tab4Title">SaaS 订阅</span>
+                  <span class="tab-btn-sub" data-i18n="scenarios.tab4Sub">订阅成本精细化控制</span>
+                </div>
+                <span>→</span>
+              </button>
+            </div>
+
+            <div class="scenario-menu-note" data-i18n="scenarios.menuNote">
+              提示：点击左侧不同业务场景，实时查看对应的痛点拆解、卡池架构方案与量化收益指标。
+            </div>
+          </aside>
+
+          <div class="scenario-stage-panel" id="scenarioStagePanel">
+            <div class="scenario-stage-header">
+              <div>
+                <h3 class="scenario-stage-title" id="scStageTitle">广告投放 · 跨平台投放稳定放量</h3>
+                <p style="font-size:0.9rem; color:var(--left-menu-text-color);" id="scStageSubtitle">
+                  专为 Meta、Google、TikTok 媒介采买团队打造的高通过率专属卡池与预算隔离体系
+                </p>
+              </div>
+              <span class="scenario-stage-badge" id="scStageBadge">推荐卡段: 4582 / 5329 专属广告段</span>
+            </div>
+
+            <div class="psr-cards-grid">
+              <div class="psr-card">
+                <span class="psr-tag pain" data-i18n="scenarios.painLabel">痛点 · PAIN POINT</span>
+                <p class="psr-text" id="scPainText">
+                  账号多、卡片分散，支付失败与风控误判频发，影响消耗节奏。
+                </p>
+              </div>
+
+              <div class="psr-card highlight">
+                <span class="psr-tag solution" data-i18n="scenarios.solutionLabel">方案 · SOLUTION</span>
+                <p class="psr-text" id="scSolutionText">
+                  按广告平台与团队拆分卡池，设置限额与规则，结合 API 批量开卡自动分配。
+                </p>
+              </div>
+
+              <div class="psr-card">
+                <span class="psr-tag result" data-i18n="scenarios.resultLabel">结果 · OUTCOME</span>
+                <p class="psr-text" id="scResultText">
+                  支付成功率更稳定，账户与预算管理更清晰，放量效率提升。
+                </p>
+              </div>
+            </div>
+
+            <div class="scenario-metrics-bar">
+              <div class="sm-item">
+                <span class="sm-label" data-i18n="scenarios.metric1Label">平均支付授权率</span>
+                <span class="sm-val" id="scMetric1">99.4%</span>
+              </div>
+              <div class="sm-item">
+                <span class="sm-label" data-i18n="scenarios.metric2Label">单卡预算颗粒度</span>
+                <span class="sm-val" id="scMetric2">日限额 / 笔限额实时调控</span>
+              </div>
+              <div class="sm-item">
+                <span class="sm-label" data-i18n="scenarios.metric3Label">财务对账周期</span>
+                <span class="sm-val" id="scMetric3">T+0 自动归集节省 85% 工时</span>
+              </div>
+              <a href="#workflow" class="btn btn-secondary" data-i18n="scenarios.workflowBtn">查看接入流程 →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Global BIN Matrix & Network Coverage ==================== -->
+    <section class="section-block alt-bg" id="bin-matrix">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="binMatrix.tag">通道与号段</span>
+          <h2 class="section-title" data-i18n="binMatrix.title">全球精选卡段矩阵与路由网络</h2>
+          <p class="section-subtitle" data-i18n="binMatrix.subtitle">
+            涵盖美区、港区、欧区与英区一级发行机构代码，专为广告投放、店群采购与全球 SaaS 优化授权路由。
+          </p>
+        </div>
+
+        <div class="bin-matrix-wrapper">
+          <div class="bin-selector-tabs" role="tablist">
+            <button type="button" class="bin-tab-btn active" data-bin-key="bin4582" role="tab" aria-selected="true">
+              <div class="bin-tab-code">
+                <span>BIN 4582</span>
+                <span style="font-size:0.75rem; color:var(--pb-primary); background:var(--pb-primary-soft); padding:2px 8px; border-radius:99px;">US</span>
+              </div>
+              <span class="bin-tab-title" data-i18n="binMatrix.t1Title">广告放量专属卡段</span>
+              <span class="bin-tab-sub" data-i18n="binMatrix.t1Sub">Visa Infinite · 媒介采买高消耗</span>
+            </button>
+
+            <button type="button" class="bin-tab-btn" data-bin-key="bin5329" role="tab" aria-selected="false">
+              <div class="bin-tab-code">
+                <span>BIN 5329</span>
+                <span style="font-size:0.75rem; color:var(--pb-primary); background:var(--pb-primary-soft); padding:2px 8px; border-radius:99px;">HK</span>
+              </div>
+              <span class="bin-tab-title" data-i18n="binMatrix.t2Title">跨境电商多币种商业段</span>
+              <span class="bin-tab-sub" data-i18n="binMatrix.t2Sub">Mastercard World · 店群采购结算</span>
+            </button>
+
+            <button type="button" class="bin-tab-btn" data-bin-key="bin4859" role="tab" aria-selected="false">
+              <div class="bin-tab-code">
+                <span>BIN 4859</span>
+                <span style="font-size:0.75rem; color:var(--pb-primary); background:var(--pb-primary-soft); padding:2px 8px; border-radius:99px;">EU</span>
+              </div>
+              <span class="bin-tab-title" data-i18n="binMatrix.t3Title">欧洲合规与物流缴纳段</span>
+              <span class="bin-tab-sub" data-i18n="binMatrix.t3Sub">Visa Commercial · SEPA / VAT</span>
+            </button>
+
+            <button type="button" class="bin-tab-btn" data-bin-key="bin4143" role="tab" aria-selected="false">
+              <div class="bin-tab-code">
+                <span>BIN 4143</span>
+                <span style="font-size:0.75rem; color:var(--pb-primary); background:var(--pb-primary-soft); padding:2px 8px; border-radius:99px;">GLOBAL</span>
+              </div>
+              <span class="bin-tab-title" data-i18n="binMatrix.t4Title">企业级 SaaS 订阅段</span>
+              <span class="bin-tab-sub" data-i18n="binMatrix.t4Sub">Visa Business · 开发者工具与 AI</span>
+            </button>
+          </div>
+
+          <div class="bin-spec-panel">
+            <div class="bin-spec-main">
+              <div>
+                <div class="bin-badge-row">
+                  <span class="section-tag" id="specRegionBadge" style="margin-bottom:0;">美国地区 · 一级银行直发号段</span>
+                  <span class="tier-pill active" id="specNetworkBadge">VISA INFINITE</span>
+                </div>
+                <h3 class="bin-hero-title" id="specHeroTitle" style="margin-top:14px;">
+                  BIN 4582 广告投放高消耗专属段
+                </h3>
+                <p class="bin-hero-desc" id="specHeroDesc" style="margin-top:8px;">
+                  深度优化 Meta Ads、Google Ads、TikTok For Business 与 Twitter(X) 的扣款握手机制，配备大额单笔授权通道与智能 3DS 验证分流。
+                </p>
+              </div>
+
+              <div>
+                <span style="font-size:0.75rem; font-weight:700; color:var(--pb-text-muted); text-transform:uppercase; letter-spacing:0.06em;" data-i18n="binMatrix.adaptedPlatforms">原生适配扣款平台：</span>
+                <div class="bin-platforms-row" id="specPlatformsRow" style="margin-top:8px;">
+                  <span class="platform-pill">Meta Ads Manager</span>
+                  <span class="platform-pill">Google Ads (Dublin / US)</span>
+                  <span class="platform-pill">TikTok For Business</span>
+                  <span class="platform-pill">Microsoft Advertising</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bin-spec-metrics">
+              <div class="spec-cell">
+                <span class="spec-cell-label" data-i18n="binMatrix.m1">平均授权成功率</span>
+                <span class="spec-cell-val" id="specM1" style="color:var(--pb-success);">99.4%</span>
+                <span class="spec-cell-note" data-i18n="binMatrix.m1Note">高基数连续扣款防误判</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label" data-i18n="binMatrix.m2">结算币种体系</span>
+                <span class="spec-cell-val" id="specM2">USD 原币扣款</span>
+                <span class="spec-cell-note" data-i18n="binMatrix.m2Note">0% 货币转换手续费</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label" data-i18n="binMatrix.m3">3DS 验证机制</span>
+                <span class="spec-cell-val" id="specM3">智能免密 / OTP</span>
+                <span class="spec-cell-note" data-i18n="binMatrix.m3Note">支持 Webhook 实时回传</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label" data-i18n="binMatrix.m4">风控隔离架构</span>
+                <span class="spec-cell-val" id="specM4">一户一卡独立卡槽</span>
+                <span class="spec-cell-note" data-i18n="binMatrix.m4Note">连带风控率低于 0.02%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bin-architecture-strip">
+            <div class="arch-card">
+              <div class="arch-title"><span class="indicator"></span><span data-i18n="binMatrix.g1Title">原币对齐 0 汇损</span></div>
+              <p class="arch-desc" data-i18n="binMatrix.g1Desc">直接对接国际清算行外汇流动性池，扣款币种与商户标价完全一致，杜绝二次货币转换费。</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-title"><span class="indicator"></span><span data-i18n="binMatrix.g2Title">独立 BIN 组隔离</span></div>
+              <p class="arch-desc" data-i18n="binMatrix.g2Desc">按团队、投放渠道和店铺分配独立号段卡池，单卡出现异常绝不污染主账号与其他卡片正常扣款。</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-title"><span class="indicator"></span><span data-i18n="binMatrix.g3Title">动态 3DS 智能验证</span></div>
+              <p class="arch-desc" data-i18n="binMatrix.g3Desc">白名单主流商户自动免除 3DS 繁琐流程；敏感交易验证码支持 API Webhook 或控制台即时秒推。</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-title"><span class="indicator"></span><span data-i18n="binMatrix.g4Title">并发高可用弹性调度</span></div>
+              <p class="arch-desc" data-i18n="binMatrix.g4Desc">多发卡行自动热备路由，当单条发卡通道遭遇维护或拥堵时，毫秒级无感切换备用发卡通道。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Security & Compliance ==================== -->
+    <section class="section-block" id="security">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="security.tag">风险管理</span>
+          <h2 class="section-title" data-i18n="security.title">安全合规</h2>
+          <p class="section-subtitle" data-i18n="security.subtitle">
+            以交易安全和可控支出为核心，结合风控策略与权限管理，帮助团队在放量时保持稳定与可追踪。
+          </p>
+        </div>
+
+        <div class="security-layout">
+          <div class="security-rule-panel">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+              <h3 style="font-size:1.22rem; font-weight:800; color:var(--logo-title-text-color);" data-i18n="security.consoleTitle">
+                实时风控策略引擎（点击体验规则开关）
+              </h3>
+              <span class="step-badge" id="activeRuleCountBadge">4 / 4 策略已激活</span>
+            </div>
+
+            <div class="rule-toggle-list">
+              <div class="rule-item enabled">
+                <div>
+                  <div class="rule-item-title" data-i18n="security.r1Title">风险规则配置</div>
+                  <div class="rule-item-desc" data-i18n="security.r1Desc">支持风险规则配置，自动拦截非白名单 MCC 商户，控制盗刷与异常交易风险</div>
+                </div>
+                <button type="button" class="switch-pill on" aria-label="Toggle Risk Rule 1"></button>
+              </div>
+
+              <div class="rule-item enabled">
+                <div>
+                  <div class="rule-item-title" data-i18n="security.r2Title">精细预算管控</div>
+                  <div class="rule-item-desc" data-i18n="security.r2Desc">自定义充值与日/月/单笔限额，超额自动触发预警，预算管理更精细</div>
+                </div>
+                <button type="button" class="switch-pill on" aria-label="Toggle Risk Rule 2"></button>
+              </div>
+
+              <div class="rule-item enabled">
+                <div>
+                  <div class="rule-item-title" data-i18n="security.r3Title">卡号隔离机制</div>
+                  <div class="rule-item-desc" data-i18n="security.r3Desc">一户一卡或一店一卡独立隔离机制，降低基础信息泄露与连带封号影响面</div>
+                </div>
+                <button type="button" class="switch-pill on" aria-label="Toggle Risk Rule 3"></button>
+              </div>
+
+              <div class="rule-item enabled">
+                <div>
+                  <div class="rule-item-title" data-i18n="security.r4Title">多线协同支持</div>
+                  <div class="rule-item-desc" data-i18n="security.r4Desc">管理员、投手、财务分级权限审批，客服、技术、商务多线协同支持</div>
+                </div>
+                <button type="button" class="switch-pill on" aria-label="Toggle Risk Rule 4"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <span class="pillar-num">SECURITY 01</span>
+              <div>
+                <h4 class="pillar-title" data-i18n="security.p1Title">交易安全</h4>
+                <p class="pillar-desc" data-i18n="security.p1Desc">支持全面客制化风险配置，PCI-DSS 金融级加密传输与实时反欺诈监测。</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <span class="pillar-num">RELIABILITY 02</span>
+              <div>
+                <h4 class="pillar-title" data-i18n="security.p2Title">技术服务</h4>
+                <p class="pillar-desc" data-i18n="security.p2Desc">故障自愈与快速响应机制，多通道发卡行自动热备切换，保障大促不掉线。</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <span class="pillar-num">BESPOKE 03</span>
+              <div>
+                <h4 class="pillar-title" data-i18n="security.p3Title">商务服务</h4>
+                <p class="pillar-desc" data-i18n="security.p3Desc">按场景定制专属解决方案，提供大客户阶梯费率与定制卡段配额支持。</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <span class="pillar-num">GLOBAL 04</span>
+              <div>
+                <h4 class="pillar-title" data-i18n="security.p4Title">客户支持</h4>
+                <p class="pillar-desc" data-i18n="security.p4Desc">多语种跨时区服务，7×24 小时专属客户成功经理与技术对接群秒级响应。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4-Step Onboarding Workflow ==================== -->
+    <section class="section-block alt-bg" id="workflow">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="workflow.tag">快速接入</span>
+          <h2 class="section-title" data-i18n="workflow.title">使用流程</h2>
+          <p class="section-subtitle" data-i18n="workflow.subtitle">
+            4 步完成从注册到支付，快速接入跨境业务场景。
+          </p>
+        </div>
+
+        <div class="steps-timeline">
+          <div class="step-card active">
+            <div class="step-top">
+              <span class="step-index">1</span>
+              <span class="step-badge" data-i18n="workflow.s1Badge">≈ 5 min</span>
+            </div>
+            <div>
+              <h3 class="step-title" data-i18n="workflow.s1Title">注册认证</h3>
+              <p class="step-desc" data-i18n="workflow.s1Desc">在线注册企业或个人主账号，极速完成线上 KYB / KYC 实名认证。</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-top">
+              <span class="step-index">2</span>
+              <span class="step-badge" data-i18n="workflow.s2Badge">快速到账</span>
+            </div>
+            <div>
+              <h3 class="step-title" data-i18n="workflow.s2Title">入账充值</h3>
+              <p class="step-desc" data-i18n="workflow.s2Desc">支持多币种在线充值，主钱包极速入账并自动完成合规审核。</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-top">
+              <span class="step-index">3</span>
+              <span class="step-badge" data-i18n="workflow.s3Badge">秒级出卡</span>
+            </div>
+            <div>
+              <h3 class="step-title" data-i18n="workflow.s3Title">生成卡片</h3>
+              <p class="step-desc" data-i18n="workflow.s3Desc">按投放平台或店铺选择所需 BIN 号段，秒速出卡，无需漫长等待。</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-top">
+              <span class="step-index">4</span>
+              <span class="step-badge" data-i18n="workflow.s4Badge">全球通用</span>
+            </div>
+            <div>
+              <h3 class="step-title" data-i18n="workflow.s4Title">完成支付</h3>
+              <p class="step-desc" data-i18n="workflow.s4Desc">立即用于广告投放、跨境物流、VAT 缴税及全球 SaaS 订阅等更多场景。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Bottom CTA Section ==================== -->
+    <section class="section-block">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="section-tag" data-i18n="cta.tag">准备好了吗</span>
+          <h2 class="section-title" data-i18n="cta.title">让虚拟卡不止于支付</h2>
+          <p class="section-subtitle" style="max-width:600px; margin:0 auto 28px;" data-i18n="cta.subtitle">
+            构建更稳定的全球投放资金链路，帮助团队把支付能力升级为增长能力。
+          </p>
+          <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
+            <a href="mailto:dingxingxing8@gmail.com" class="btn btn-primary btn-lg" data-i18n="cta.contactBtn">联系商务</a>
+            <a href="#workflow" class="btn btn-secondary btn-lg" data-i18n="cta.secondaryBtn">了解流程</a>
+          </div>
+          <div class="cta-trust-badges">
+            <span data-i18n="cta.badge1">✓ 银行级安全加密</span>
+            <span data-i18n="cta.badge2">✓ 7×24 小时运维</span>
+            <span data-i18n="cta.badge3">✓ 数据隐私保护</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <a href="#top" class="brand-logo">
+            <img src="./assets/logo.svg" alt="PayBridge Logo" width="34" height="34" />
+            <span class="brand-title" style="font-size:1.15rem;">PayBridge</span>
+          </a>
+          <p style="font-size:0.86rem; color:var(--left-menu-text-color);" data-i18n="footer.tagline">
+            企业级虚拟卡服务，助力全球跨境支付与广告投放。
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#advantages" data-i18n="nav.advantages">平台优势</a>
+          <a href="#scenarios" data-i18n="nav.scenarios">场景方案</a>
+          <a href="#bin-matrix" data-i18n="nav.binMatrix">卡段矩阵</a>
+          <a href="#security" data-i18n="nav.security">安全合规</a>
+          <a href="#workflow" data-i18n="nav.workflow">使用流程</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>Copyright © 2026 PayBridge All Rights Reserved.</span>
+        <a href="mailto:dingxingxing8@gmail.com" style="font-family:var(--pb-font-mono); color:var(--top-header-text-color);">
+          dingxingxing8@gmail.com
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
